@@ -5,12 +5,16 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import './index.css'
+import Navbar from './components/navbar';
+import Banner from './components/banner';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
-  },
+    element: <div>
+      <Navbar></Navbar>
+    </div>,
+  }
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
