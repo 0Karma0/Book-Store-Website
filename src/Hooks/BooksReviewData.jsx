@@ -6,7 +6,7 @@ const BooksReviewData = () => {
 
     useEffect(()=>{
         const fetchData = async () =>{
-            const res = await fetch('/public/data.json')
+            const res = await fetch('/data.json')
             const data = await res.json();
             setData(data);
         } 
