@@ -14,5 +14,5 @@ export const saveToLocalStorage = (data) => {
 
 export const getFromLOcalStorage = () => {
     const data = JSON.parse(localStorage.getItem('savedList')) || [];
-    return data;
-};
+    return data
+}
