@@ -26,9 +26,9 @@ const ListedBooksDetails = () => {
             <div className="card-body">
                 <h2 className="card-title">{bookName}</h2>
                 <p>By:-{author}</p>
-                <p>{category}</p>
+                <p>Categories: {category}</p>
                 <p>Review:{review}</p>
-                <p>{tags}</p>
+                <p>Tags:{tags}</p>
                 <p>Number of Pages:{totalPages}</p>
                 <p>Publisher:{publisher}</p>
                 <p>Published Date:{yearOfPublishing}</p>

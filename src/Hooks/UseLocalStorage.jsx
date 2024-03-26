@@ -1,12 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { getFromLOcalStorage } from "../utils/localStorage";
 
 const UseLocalStorage = () => {
     const [LocalData, setLocalData] = useState([]);
-    return (
-        <div>
-            
-        </div>
-    );
+    console.log(LocalData);
+    useEffect(()=>{
+        setLocalData(getFromLOcalStorage())
+    }, [])
+    return {LocalData};
 };
 
 export default UseLocalStorage;
