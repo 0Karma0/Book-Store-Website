@@ -47,17 +47,17 @@ const Nav = () => {
             className={({ isActive }) =>
               isActive ? 'text-primary font-bold' : 'font-bold'
             }
-            to='/blogs'
+            to='/listedBooks'
           >
-            Blogs
+            Listed Books
           </NavLink>
           <NavLink
             className={({ isActive }) =>
               isActive ? 'text-primary font-bold' : 'font-bold'
             }
-            to='/bookmarks'
+            to='/pagesToRead'
           >
-            Bookmarks
+            Pages To Read
           </NavLink>
         </ul>
 
