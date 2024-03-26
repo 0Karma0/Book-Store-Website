@@ -2,11 +2,16 @@ import { useParams } from "react-router-dom";
 import BooksReviewData from "../Hooks/BooksReviewData";
 import { useEffect } from "react";
 import { useState } from "react";
+import { saveToLocalStorage } from "../utils/localStorage";
 
 const ListedBooksDetails = () => {
     const [singleData, setSingleData] = useState({});
     const { id } = useParams();
     const { data, loading } = BooksReviewData();
+
+    const handleList = () => {
+        saveToLocalStorage(singleData);
+    }
 
     useEffect(() => {
         if(data){
@@ -29,7 +34,7 @@ const ListedBooksDetails = () => {
                 <p>Published Date:{yearOfPublishing}</p>
                 <p>Rating :{rating}/5</p>
                 <div className="card-actions justify-start">
-                    <button className="btn btn-info">Read</button>
+                    <button onClick={handleList} className="btn btn-info">Read</button>
                     <button className="btn btn-outline">Wish List</button>
                 </div>
             </div>
