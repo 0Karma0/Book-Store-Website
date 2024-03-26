@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+// eslint-disable-next-line react/prop-types
 const ListCard = ({data}) => {
     const {id,bookName, author, image, totalPages, rating, category, tags, publisher, yearOfPublishing } = data || {};
     return (

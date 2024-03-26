@@ -7,7 +7,7 @@ import { saveToLocalStorage } from "../utils/localStorage";
 const ListedBooksDetails = () => {
     const [singleData, setSingleData] = useState({});
     const { id } = useParams();
-    const { data, loading } = BooksReviewData();
+    const { data} = BooksReviewData();
 
     const handleList = () => {
         saveToLocalStorage(singleData);

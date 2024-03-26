@@ -3,7 +3,9 @@ import ListCard from "../components/ListCard";
 
 const ListedBooks = () => {
     const { LocalData } = UseLocalStorage();
-    console.log(LocalData);
+    if(LocalData.length == 0){
+        return (<div className="text-center mt-5">No books listed yet!</div>)
+    }
     return (
         <div>
             {
