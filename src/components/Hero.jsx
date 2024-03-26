@@ -9,7 +9,7 @@ const Hero = () => {
             Welcome to
             <span className='bg-gradient-to-r from-primary via-blue-500 to-secondary bg-300% text-transparent bg-clip-text animate-gradient'>
               {' '}
-              BooksReview
+              BooksVibe
             </span>
           </h1>
           <p className='py-6'>

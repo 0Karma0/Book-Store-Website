@@ -29,7 +29,7 @@ const Nav = () => {
           to='/'
           className='btn btn-ghost gap-0 text-secondary normal-case text-2xl'
         >
-          Books<span className='text-primary'>Review</span>
+          Books<span className='text-primary'>Vibe</span>
         </Link>
       </div>
       <div className='flex-none gap-2'>
